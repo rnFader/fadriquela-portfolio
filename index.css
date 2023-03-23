@@ -1,0 +1,49 @@
+* {
+	font-family: 'Lilita One', cursive;
+	color: #351A50;
+}
+
+html{
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+nav{
+
+	background-image: radial-gradient(circle, #d16ba5, #c45c9c, #b74e94, #aa3f8c, #9c2f84, #9a2c8a, #962a90, #922897, #9535ae, #9542c7, #9150e1, #875ffb);
+
+	background-repeat: no-repeat;
+	background-blend-mode: ;
+	background-size: 110%;
+
+	background-position: center;
+
+}
+
+body{
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	background-repeat: no-repeat;
+	background-blend-mode: ;
+	background-size: 110%;
+
+	background-position: center;
+}
+
+#nav-bar{
+	z-index: 2;
+}
+#side-bar{
+	z-index: 1;
+}
+
+#profile-pic-small{
+	height: 50px;
+	width: 50px;
+}
+
+#profile-pic{
+	height: 150px;
+	width: 150px;
+}
