@@ -25,7 +25,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top animated-hover" id="animated-nav">
         <h2>
-            <a href="#" class="text-decoration-none text-light d-none d-md-block"> 
+            <a href="#" class="glow text-decoration-none text-light d-none d-md-block"> 
                 Fadr
             </a>
 
@@ -38,8 +38,8 @@
 
             </span>
         </button>
-        <div class="collapse navbar-collapse text-right" id="navbarNav">
-            
+        <div class="collapse navbar-collapse text-right glow" id="navbarNav">
+
             <hr class="my-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
@@ -60,13 +60,13 @@
 
 
 
-    <div class="row offset-1">
+    <div class="row offset-1 ">
         <!-- MainContent -->
         <div class="col mt-5">
 
             <!-- Landing Page -->
             <div class="d-none d-md-block jumbotron-fluid text-left vh-100 py-5" id="landing-page">
-                
+
                 <h5>Hi, I'm...</h5>
                 <div class="row">
 
@@ -269,14 +269,14 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contact-modal">Send Message</button>
-                                            <button type="reset"  class="btn btn-light">Reset</button>
+                                            <button type="button" class="btn btn-light m-2" data-toggle="modal" data-target="#contact-modal">Send Message</button>
+                                            <button type="reset"  class="btn btn-light m-2">Reset</button>
                                         </div>
 
 
                                     </div>
 
-                                    <div class="d-none d-lg-flex row flex-row-reverse  justify-content-center">
+                                    <div class="d-none d-md-flex row flex-row-reverse  justify-content-center">
 
                                         <div class="col pb-3">
 
@@ -284,7 +284,7 @@
 
                                         </div>
 
-                                        <div class="col mr-0">
+                                        <div class="col d-md-none d-lg-flex mr-0">
                                             <div class= "form-group">
                                                 <label for="name">Name</label>
                                                 <input type="text" id="name" placeholder="Your Name">
@@ -306,8 +306,8 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contact-modal">Send Message</button>
-                                                <button type="reset"  class="btn btn-light">Reset</button>
+                                                <button type="button" class="btn btn-light m-2" data-toggle="modal" data-target="#contact-modal">Send Message</button>
+                                                <button type="reset"  class="btn btn-light m-2">Reset</button>
                                             </div>
                                         </div>
                                     </div>
@@ -384,7 +384,7 @@
                 })
             </script>
 
-
+            <!-- Nav Bar Hide -->
             <script>
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
@@ -397,6 +397,9 @@
               prevScrollpos = currentScrollPos;
             }
             </script>
+
+            <!-- End of Nav Bar Hide -->
+
 
 
 
