@@ -2,11 +2,13 @@
 	font-family: 'Lilita One', cursive;
 	color: #351A50;
 }
-
+html {
+}
 html{
 
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden;		
+    scroll-behavior: smooth;
 }
 
 
@@ -46,4 +48,41 @@ body{
 #profile-pic{
 	height: 150px;
 	width: 150px;
+}
+
+#landing-page{
+}
+
+
+.bg-3way{
+	background-image: linear-gradient(to left bottom, #ccbce5, #eab4da, #ffaec0, #ffaf9d, #ffb97c, #ffbe84, #ffc48d, #ffc995, #ffcfc1, #ffdde8, #ffeffd, #ffffff);
+}
+
+
+.animate{
+	transition: top 0.3s;
+}
+
+@keyframes hide-nav {
+}
+
+
+#navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#animated-nav{
+  transition: top 0.3s;
+}
+
+
+iframe{
+	width: 600px;
+	height: 325px;
+	
 }

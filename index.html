@@ -7,10 +7,14 @@
 
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
+
+    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <title>Developer Profile</title>
@@ -19,24 +23,24 @@
 <body class="text-center">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-
-
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top animated-hover" id="animated-nav">
         <h2>
             <a href="#" class="text-decoration-none text-light d-none d-md-block"> 
-                    Fadr
+                Fadr
             </a>
 
-            <img class="rounded-circle img-thumbnail d-md-none d-block" id="profile-pic-small" src="resources/profile_pic.jpg"> 
+            <a href="#"><img class="rounded-circle img-thumbnail d-md-none d-block" id="profile-pic-small" src="resources/profile_pic.jpg" data-toggle="tooltip" data-placement="bottom" title="It's a puppy!"> </a>
         </h2>
 
-      
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> 
 
             </span>
         </button>
         <div class="collapse navbar-collapse text-right" id="navbarNav">
+            
+            <hr class="my-4">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#about-me">About Me<span class="sr-only">(current)</span></a>
@@ -56,28 +60,28 @@
 
 
 
-    <div class="row offset-1" id="about-me" >
+    <div class="row offset-1">
         <!-- MainContent -->
         <div class="col mt-5">
 
             <!-- Landing Page -->
             <div class="d-none d-md-block jumbotron-fluid text-left vh-100 py-5" id="landing-page">
                 
-                    <h5>Hi, I'm...</h5>
-                    <div class="row">
-                        
-                        <h1 class="col display-1">Fadriquela, Rafael Nico</h1>
-                        <div class="col">
-                           <img class="rounded-circle img-thumbnail d-none d-md-block" id="profile-pic" src="resources/profile_pic.jpg"> 
-                        </div>
+                <h5>Hi, I'm...</h5>
+                <div class="row">
 
+                    <h1 class="col display-1">Fadriquela, Rafael Nico</h1>
+                    <div class="col">
+                        <img class="rounded-circle img-thumbnail d-none d-md-block" id="profile-pic" src="resources/profile_pic.jpg"> 
                     </div>
-                    <p class="lead">Full-Stack Developer/Game Developer</p>
-                    <hr class="my-4">
-                    <p>“Every Friday, I like to high five myself for getting through another week on little more than caffeine, willpower, and inappropriate humor.” —Nanea Hoffman</p>
 
-               
-                
+                </div>
+                <p class="lead">Full-Stack Developer/Game Developer</p>
+                <hr class="my-4">
+                <p>“Every Friday, I like to high five myself for getting through another week on little more than caffeine, willpower, and inappropriate humor.” —Nanea Hoffman</p>
+
+
+
             </div>
 
             <div class="d-block d-md-none text-center mr-2">
@@ -90,306 +94,312 @@
             <!-- Collapse make header collapse? -->
 
             <!-- About Me Page -->
-            <div class="p-5 bg-info text-right m-5 border-dark border" about-me="about-me">
+            <div class="p-5 bg-3way text-right m-5 border-dark border" id="about-me">
                 <h2>About Me</h5>
-                    <div class="row">
+                    <p>Several Facts about me</p>
+                    <hr class="my-4">
+                    <div class="text-info">
 
-                        <div>
-                            <p class="lead">Full-Stack Developer/Game Developer</p>
-                            <p class="text-justify">Hello! My name is Rafael a couch potato living in a shed that create amazing websites and games for a living. </p>
-                        </div>
+                        <p class="text-justify">Hello! My name is Rafael a couch potato living in a shed that create amazing websites and games for a living. </p>
 
+                        <p class="text-justify ">On the 6th of December the stars aligned and gave birth a talented and gifted child, now that child was not me but I was still born on that day but as average as anyone can be. Growing up I spent alot of my youth watching animes, playing video games hence why I spent a good 10 years in the game industry but now I am entering a new chapter of my life and that is Web Development.</p>
 
-                        <p class="text-justify">I always had a interest in game development and website designing and I've spent a good amount of my life game developing now its the other guy's turn</p>
+                        <p class="text-justify">I always had a interest in Web Development now entering my an entire new chapter, I aim to create the most awesome website there is!</p>
+
 
                         <p class="text-justify">I learned several technologies on my journy here's a list:</p>
 
                     </div>
 
                     <hr class="my-4">
-                    <ul class="row list-unstyled text-left m-2">
+                    <ul class="row text-left m-0 m-md-2 initialism ">
                         <li class="col-6">Unity Engine</li>
                         <li class="col-6">HTML</li>
-                        <li class="col-6">Bootstrap</li>
+                        <li class="col-6">C++</li>
+                        <li class="col-6">CSS</li>
                         <li class="col-6">C#</li>
-                        <li class="col-6"></li>
-                        <li class="col-6">Unity Engine</li>
 
                     </ul>
                 </div>
                 <!-- End of About Me Page -->
 
                 <!-- Project Page -->
-                <div class="p-5 bg-info text-right m-5 border-dark border"  id="projects">
+                <div class="p-5 bg-3way text-right m-5 border-dark border"  id="projects">
                     <h2>Projects</h5>
                         <p>Wanna see everything I made over the years?</p>
                         <p>Feel free to look!</p>
 
-                        <hr>
+                        <hr class="my-4">
                         <div class="row">
 
                             <!-- Projects View on Small Devices -->
-                            <div class="d-md-none">
+                            <div class="d-md-none col">
 
                                 <!-- Feature Projects  -Carousel on small devices!!! -->
-                               
-                                   <div id="featuredProjects" class="carousel slide " data-ride="carousel">
 
-                                       <div class="carousel-inner">
-                                           <div class="carousel-item active mx-auto">
+                                <div id="featuredProjects" class="carousel slide " data-ride="carousel">
 
-                                               <div class="card border border-dark" >
-                                                   <div class="card-body">
-                                                       <img class="card-img-top rounded w-100" src="resources/feature_project_1.png">
-                                                       <h5 class="card-title">Catch The Guava</h5>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active mx-auto">
 
-                                                       <p class="card-text">#Hyper Casual Game</p>
-                                                       <a href="https://www.gmanetwork.com/news/publicaffairs/gma7specials/540825/catch-the-guava-is-the-top-new-free-game-app-on-google-play/story/" class="btn btn-info">Learn More</a>
-                                                   </div>
-                                               </div>
+                                            <div class="card border border-dark" >
+                                                <div class="card-body">
+                                                    <img class="card-img-top rounded w-100" src="resources/feature_project_1.png">
+                                                    <h5 class="card-title">Catch The Guava</h5>
 
-                                           </div>
-                                           <div class="carousel-item">
-                                              <div class="card border border-dark">
-                                               <div class="card-body">
-                                                   <img class="card-img-top rounded" src="resources/feature_project_2.png">
-                                                   <h5 class="card-title">Brgy: 143</h5>
+                                                    <p class="card-text">#Hyper Casual Game</p>
+                                                    <a href="https://www.gmanetwork.com/news/publicaffairs/gma7specials/540825/catch-the-guava-is-the-top-new-free-game-app-on-google-play/story/" class="btn btn-info">Learn More</a>
+                                                </div>
+                                            </div>
 
-                                                   <p class="card-text">#Mobile Casual Basketball</p>
-                                                   <a href="https://en.wikipedia.org/wiki/Barangay_143" class="btn btn-info">Learn More</a>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       <div class="carousel-item">
-                                          <div class="card border border-dark">
-                                           <div class="card-body">
-                                               <img class="card-img-top rounded" src="resources/feature_project_3.png">
-                                               <h5 class="card-title">Brawl Quest</h5>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card border border-dark">
+                                                <div class="card-body">
+                                                    <img class="card-img-top rounded" src="resources/feature_project_2.png">
+                                                    <h5 class="card-title">Brgy: 143</h5>
 
-                                               <p class="card-text">#Roguelite Beat-em up</p>
-                                               <a href="https://play.google.com/store/apps/details?id=com.thinkbitsolutions.games.brawlquestluwan&hl=en&gl=US&pli=1" class="btn btn-info">Learn More</a>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
+                                                    <p class="card-text">#Mobile Casual Basketball</p>
+                                                    <a href="https://en.wikipedia.org/wiki/Barangay_143" class="btn btn-info">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card border border-dark">
+                                                <div class="card-body">
+                                                    <img class="card-img-top rounded" src="resources/feature_project_3.png">
+                                                    <h5 class="card-title">Brawl Quest</h5>
 
-                               <a class="carousel-control-prev" href="#featuredProjects" role="button" data-slide="prev">
-                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                   <span class="sr-only">Previous</span>
-                               </a>
-                               <a class="carousel-control-next" href="#featuredProjects" role="button" data-slide="next">
-                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                   <span class="sr-only">Next</span>
-                               </a>
+                                                    <p class="card-text">#Roguelite Beat-em up</p>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.thinkbitsolutions.games.brawlquestluwan&hl=en&gl=US&pli=1" class="btn btn-info">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <!-- Other Projects -Cards -->
+                                    <a class="carousel-control-prev" href="#featuredProjects" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#featuredProjects" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
 
-                            </div> 
-                            <!-- End of Project View on Small Devices -->
-    
+                                    <!-- Other Projects -Cards -->
 
+                                </div> 
+                                <!-- End of Project View on Small Devices -->
+                            </div>
 
-                        </div>
-                       
-                        <!-- Default Project View -->
+                            <!-- Default Project View -->
 
-                        <div class="text-light min-vh-50 p-5 d-none d-md-block">
+                            <div class="text-light min-vh-50 p-5 d-none d-md-block col">
+                                <div class="d-lg-flex justify-content-center p-md-5 ">
+                                    <div class="card border border-dark col-xl-4 mb-5 mb-xl-0">                        
+                                        <div class="card-body">
+                                            <img class="card-img-top rounded" src="resources/feature_project_2.png">
+                                            <h5 class="card-title">Brgy: 143</h5>
 
-                           
+                                            <p class="card-text">#Mobile Casual Basketball</p>
+                                            <a href="https://en.wikipedia.org/wiki/Barangay_143" class="btn btn-info">Learn More</a>
+                                        </div>              
+                                    </div>
 
-                            <div class="d-lg-flex justify-content-center p-md-5">
-                                <div class="card border border-dark col-xl-4 mb-5 mb-xl-0">                        
-                                    <div class="card-body">
-                                        <img class="card-img-top rounded" src="resources/feature_project_2.png">
-                                        <h5 class="card-title">Brgy: 143</h5>
+                                    <div class="card border border-dark  col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5">                        
+                                        <div class="card-body">
+                                            <img class="card-img-top rounded w-100" src="resources/feature_project_1.png">
+                                            <h5 class="card-title">Catch The Guava</h5>
 
-                                        <p class="card-text">#Mobile Casual Basketball</p>
-                                        <a href="https://en.wikipedia.org/wiki/Barangay_143" class="btn btn-info">Learn More</a>
-                                    </div>              
-                                </div>
+                                            <p class="card-text">#Hyper Casual Game</p>
+                                            <a href="https://www.gmanetwork.com/news/publicaffairs/gma7specials/540825/catch-the-guava-is-the-top-new-free-game-app-on-google-play/story/" class="btn btn-info">Learn More</a>
+                                        </div>       
+                                    </div>
 
-                                <div class="card border border-dark  col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5">                        
-                                    <div class="card-body">
-                                        <img class="card-img-top rounded w-100" src="resources/feature_project_1.png">
-                                        <h5 class="card-title">Catch The Guava</h5>
+                                    <div class="card border border-dark  col-xl-4 mb-5 mb-xl-0">                        
+                                        <div class="card-body">
+                                            <img class="card-img-top rounded" src="resources/feature_project_3.png">
+                                            <h5 class="card-title">Brawl Quest</h5>
 
-                                        <p class="card-text">#Hyper Casual Game</p>
-                                        <a href="https://www.gmanetwork.com/news/publicaffairs/gma7specials/540825/catch-the-guava-is-the-top-new-free-game-app-on-google-play/story/" class="btn btn-info">Learn More</a>
-                                    </div>       
-                                </div>
-
-                                <div class="card border border-dark  col-xl-4 mb-5 mb-xl-0">                        
-                                    <div class="card-body">
-                                        <img class="card-img-top rounded" src="resources/feature_project_3.png">
-                                        <h5 class="card-title">Brawl Quest</h5>
-
-                                        <p class="card-text">#Roguelite Beat-em up</p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.thinkbitsolutions.games.brawlquestluwan&hl=en&gl=US&pli=1" class="btn btn-info">Learn More</a>
-                                    </div>     
+                                            <p class="card-text">#Roguelite Beat-em up</p>
+                                            <a href="https://play.google.com/store/apps/details?id=com.thinkbitsolutions.games.brawlquestluwan&hl=en&gl=US&pli=1" class="btn btn-info">Learn More</a>
+                                        </div>     
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                     
 
+                        <!-- End of Default Project View -->
 
-                        </div>
-
-
-                <!-- End of Default Project View -->
-
-            <!-- End of Project Page -->
+                        <!-- End of Project Page -->
 
 
 
-            </div>
+                    </div>
 
 
-            <!-- Contact Me Page -->
-            <div class="p-5 bg-info text-right m-5 border border-dark" id="contact-Me">
-                <h2>Get In Touch!</h5>
+                    <!-- Contact Me Page -->
+                    <div class="p-5 bg-3way text-right m-5 border border-dark" id="contact-Me">
+                        <h2>Get In Touch!</h5>
 
-                    <p>Wanna create something amazing together?</p>
-                    <p>My Inbox is always open for new opportunities whether its a job offer, project or just chatting</p>
+                            <p>Wanna create something amazing together?</p>
+                            <p>My Inbox is always open for new opportunities whether its a job offer, passion projects or just chatting</p>
 
-                    <hr>
+                            <hr>
 
-                    <div class="row offset-2 mx-auto flex-column">
-                        <form>   
-                            <div class="d-block d-md-none">
-                                <div class= "form-group ">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                </div>
-
-                                <div class="form-group d-block d-md-none">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                                </div>
-
-                                <div class="form-group d-block d-md-none">
-                                    <label for="contact">Contact Number</label>
-                                    <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
-                                </div>                         
-
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="4" placeholder="Message me..."></textarea>
-                                </div>
-
-                            </div>
-
-                            <div class="d-none d-md-block row">
-
-                                <div class="col-6 ">
-                                    
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15446.72741478948!2d121.11374320000002!3d14.560177150000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c796ad2f0d5b%3A0x16c8621306a6e3ad!2sGreenwoods%20Executive%20Village%20pasig%20-%20Ameliorate%20builders!5e0!3m2!1sen!2sph!4v1679576873852!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-
-                                <div class="col ">
-                                    <div class= "form-group ">
-                                        <label for="name">Name</label>
-                                        <input type="text" id="name" placeholder="Your Name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email address</label>
-                                        <input type="email"  id="email" placeholder="name@example.com">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact">Contact Number</label>
-                                        <input type="text"  id="contact" placeholder="+63 900 000 0000">
-                                    </div>                         
-
-                                    <div class="form-group">
-                                        <label for="message">Message</label>
-                                        <textarea id="message" rows="4" placeholder="Message me..."></textarea>
-                                    </div>
-
-                                </div>
-
-                                
-
-                            </div>
-
-
-
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contact-modal">Send Message</button>
-                            <button type="reset"  class="btn btn-light">Reset</button>
-                        </div>
-
-
-                        <!-- Modal Start -->
-                            <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-me-label" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="contact-me-label">Thanks for getting in touch!</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                            </button>
+                            <div class="row offset-2 mx-auto flex-column">
+                                <form>   
+                                    <div class="d-block d-lg-none">
+                                        <div class= "form-group ">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email address</label>
+                                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact">Contact Number</label>
+                                            <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
+                                        </div>                         
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                                            <textarea class="form-control" id="message" rows="4" placeholder="Message me..."></textarea>
                                         </div>
 
-                                        <div class="modal-body">Message Successfully Sent</div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contact-modal">Send Message</button>
+                                            <button type="reset"  class="btn btn-light">Reset</button>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="d-none d-lg-flex row flex-row-reverse  justify-content-center">
+
+                                        <div class="col pb-3">
+
+                                            <iframe class="border border-dark vh-" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15446.72741478948!2d121.11374320000002!3d14.560177150000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c796ad2f0d5b%3A0x16c8621306a6e3ad!2sGreenwoods%20Executive%20Village%20pasig%20-%20Ameliorate%20builders!5e0!3m2!1sen!2sph!4v1679576873852!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                        </div>
+
+                                        <div class="col mr-0">
+                                            <div class= "form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" id="name" placeholder="Your Name">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="email">Email address</label>
+                                                <input type="email"  id="email" placeholder="name@example.com">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="contact">Contact Number</label>
+                                                <input type="text" id="contact" placeholder="+63 900 000 0000">
+                                            </div>                         
+
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea id="message" rows="4" placeholder="Message me..."></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contact-modal">Send Message</button>
+                                                <button type="reset"  class="btn btn-light">Reset</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Modal End -->
 
-                    </form>
+                                <!-- Modal Start -->
+                                <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-me-label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="contact-me-label">Thanks for getting in touch!</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">Message Successfully Sent</div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal End -->
+                            </form>
 
 
 
+                        </div>
 
+                    </div>
+                    <!-- End of Contact Me Page -->
 
                 </div>
 
+                <!-- End of MainContent -->
+
+            </div>        
+
+
+
+
+            <footer>
+                <p>Designed by: Fadriquela, Rafael 2023</p>
+                <a href="#" class="text-decoration-none"><p>Back To Top</p></a>
+            </footer>    
+
+            <!-- Side Bar -->
+            <div class="d-none d-md-block w-25 p-0 fixed-bottom " id="side-bar">  
+                <!-- Dont Show on small device -->
+                <!-- Start at bot left and go up -->
+                <div class=" w-25">
+                    <div>
+                        <ul class="list-unstyled m-md-1 m-xl-4">
+                            <li><a href="https://www.facebook.com/rafael.fadriquela/" data-toggle="tooltip" data-placement="top" title="Visit me @Fb!"><img src="resources/fb_logo.png" class="img-thumbnail"></a></li>
+                            <li class="mt-2"><a href="https://www.linkedin.com/in/rafael-fadriquela-36835987/" data-toggle="tooltip" data-placement="top" title="Check out my Linkedin!"><img src="resources/linkin_logo.png" class="img-thumbnail"></a></li>
+                            <li class="mt-2"><a href="https://gitlab.com/fadr.developer" data-toggle="tooltip" data-placement="top" title="Check out my projects!"><img src="resources/git_logo.png" class="img-thumbnail"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-             <!-- End of Contact Me Page -->
+            <!-- End of Side Bar -->
 
-        </div>
-       
-        <!-- End of MainContent -->
+            <script type="text/javascript" src="assets/js/css3-animate-it.js"></script>
+            <!-- Bootstrap Script -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
-    </div>        
+            <script>
+
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            </script>
 
 
-
-
-    <footer>
-        <p>Designed by: Fadriquela, Rafael 2023</p>
-        <p>Back To Top</p>
-    </footer>    
-
-    <!-- Side Bar -->
-    <div class="d-none d-md-block w-25 p-0 fixed-bottom " id="side-bar">  
-        <!-- Dont Show on small device -->
-        <!-- Start at bot left and go up -->
-        <div class=" w-25">
-            <div>
-                <ul class="list-unstyled m-md-1 m-xl-4">
-                    <li><a href="https://www.facebook.com/rafael.fadriquela/"><img src="resources/fb_logo.png" class="img-thumbnail"></a></li>
-                    <li class="mt-2"><a href="https://www.linkedin.com/in/rafael-fadriquela-36835987/"><img src="resources/linkin_logo.png" class="img-thumbnail"></a></li>
-                    <li class="mt-2"><a href="https://gitlab.com/fadr.developer"><img src="resources/git_logo.png" class="img-thumbnail"></a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-    <!-- End of Side Bar -->
+            <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("animated-nav").style.top = "0";
+              } else {
+                document.getElementById("animated-nav").style.top = "-60px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+            </script>
 
 
 
-    <script type="text/javascript" src="assets/js/css3-animate-it.js"></script>
-    <!-- Bootstrap Script -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
-</body>
-</html>
+        </body>
+        </html>
